@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registratin Form</title>
+    <style>
+        /*id*/
+        #body {
+            text-align: justify;
+            background-color: #dbdbb0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
+        }
+
+        #srf {
+            
+            text-align: center;
+        }
+
+        #form {
+            border: 2px solid;
+            width: 54%;
+            background-color: #ffffff;
+            margin: auto;
+            padding: 65px 40px;
+        }
+
+        .input_field {
+            height: 28px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <form id="form" action="main.py">
+        <header id="image">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 105px;"><input type="image" src="./images/saru.jpg" width="100" placeholder="photo" alt="image"></td>
+                    <td>
+                        <div id="srf">
+                            <h1>Student Registration Form</h1>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </header>
+        <div>
+            <h2>Student Information</h2>
+
+            <label for="firstname">Firstname</label>
+            <input class="input_field" type="text" placeholder="First name" name="" id="firstname">
+            <label for="middlename">Middlename</label>
+            <input class="input_field" type="text" placeholder="Middle name" name="" id="middlename">
+            <label for="lastname">Lastname</label>
+            <input class="input_field" type="text" placeholder="Last name" name="" id="lastname"><br><br>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" class="input_field" placeholder="Date Of Birth" id="DOB"> gender:
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="others">
+            <label for="others">Others</label><br><br>
+            <label class="input_field" for="nationality">Nationality</label>
+            <input type="text" class="input_field" placeholder="nationality" name="" id="nationality">
+            <label for="id">Id Proof Number</label>
+            <input class="input_field" type="number" placeholder="id proof number" id="id">
+            <h2>Contact Information</h2>
+            <label for="email">Email</label>
+            <input class="input_field" type="email" placeholder="email" name="" id="email">
+            <label for="mobile_number">Mobile Number</label>
+            <input class="input_field" type="number" placeholder="Mobile Number" name="" id="mobile_number">
+
+            <h2>Address</h2>
+
+            <label for="present_address">Present Address</label>
+            <textarea  class="input_field" name="" id="present_address" cols="30" rows="10" placeholder="Present Address"></textarea>
+            <label for="city">City</label>
+            <input class="input_field" type="text" placeholder="City" id="city"><br><br>
+            <label for="ountry">Country</label>
+            <input class="input_field" type="text" placeholder="Country" name="" id="country">
+            <label for="pincode">Pincode</label>
+            <input class="input_field" type="number" placeholder="Pin code" name="" id="pincode">
+
+            <h2>Skills</h2>
+
+            <input type="checkbox" name="" id="c">
+            <label for="c">C</label><br>
+            <input type="checkbox" name="" id="c++">
+            <label for="c++">C++</label><br>
+            <input type="checkbox" name="" id="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" name="" id="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" name="" id="c#.net">
+            <label for="c#.net">C#.net</label><br>
+            <input type="checkbox" name="" id="webdevelopment">
+            <label for="webdevelopment">Web Development</label>
+
+        </div>
+        <footer id="signs">
+            <table style="width: 100%; margin-bottom: 50px; margin-top: 50px;">
+                <tr>
+                    <td style="width: 40%;"></td>
+                    <td>Signature of Verifier</td>
+                    <td>Signature of student</td>
+                </tr>
+            </table>
+        </footer>
+    </form>
+</body>
+
+</html>
